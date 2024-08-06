@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+}
+
+header, footer {
+    text-align: center;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key {
+    border: 0.4rem solid #fff;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all 0.07s ease;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.key:nth-child(1) {
+    background: #ff7675;
+}
+
+.key:nth-child(2) {
+    background: #74b9ff;
+}
+
+.key:nth-child(3) {
+    background: #55efc4;
+}
+
+.key:nth-child(4) {
+    background: #ffeaa7;
+}
+
+.key:nth-child(5) {
+    background: #fd79a8;
+}
+
+.key:nth-child(6) {
+    background: #a29bfe;
+}
+
+.key:nth-child(7) {
+    background: #fdcb6e;
+}
+
+.key kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.key .sound {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+.key.playing {
+    transform: scale(1.1);
+    border-color: #ff7e5f;
+    box-shadow: 0 0 1rem #ff7e5f;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .key {
+        width: 80px;
+        font-size: 1rem;
+    }
+
+    .key kbd {
+        font-size: 2.5rem;
+    }
+
+    .key .sound {
+        font-size: 1rem;
+    }
+}
